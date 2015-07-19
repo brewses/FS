@@ -1,0 +1,35 @@
+nav
+    background-color: $black
+    margin: 0 auto
+    max-width: 100%
+    
+.top-nav
+    width: 100%
+    height: 111px
+    background: rgba(0, 0, 0, 0.8)
+    & .top-nav-content
+        max-width: 1180px
+        height: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        margin: 0 auto
+        & form input
+            background: rgba(0, 0, 0, 0.0)
+            border: none
+            &:focus
+                border-bottom: solid 2px $white
+                outline: none
+        & form button
+            background: rgba(0, 0, 0, 0.0)
+            border: none
+.internal
+    background: url("../../images/internal-header.jpg")
+    height: 399px
+    box-shadow: 0 10px 20px $black
+    & h1
+        position: absolute
+        top: 290px
+        left: 50%
+        transform: translate(-50%, 0%)

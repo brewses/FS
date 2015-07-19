@@ -1,0 +1,94 @@
+/*--General--*/
+html
+    font-size: 80% //sets default reference to 16px on most browsers, assuming 14pt is base in mockup
+p
+    @include font("Lato", 1em, $black, 400)
+    line-height: 1.5
+
+h2
+    @include font("Lato", 2em, $white, 900) //28pt/14pt=2
+    
+h1
+    @include font("Lato", 3.714em, $white, 900) //52pt/14pt=3.714
+
+a
+    text-decoration: none
+    &:hover
+        text-decoration: none
+        
+   
+/*--Header--*/
+.top-nav form input
+    @include font("Lato", 1rem, $white, 400)
+nav ul .dropdown
+    @include font("Lato", 1em, $green, 700)
+    & > a
+        @include font("Lato", 1em, $green, 700)
+        &:visited
+            color: $green
+    & ul .sub-nav a
+        @include font("Lato", 1em, $blue, 400)
+        & ul .flyout-nav a
+            @include font("Lato", 1em, $blue, 400)
+.donate 
+    @include font("Lato", 1.142em, $black, 700) //16pt/14pt=1.142
+    background-color: $orange
+    padding: 12px 34px
+    &:hover
+        color: $black
+
+/*--Spotlight--*/
+.spotlight-title
+    @include font("Lato", 5.961em, $white, 900) //83.45pt/14pt=5.961
+        
+.icon-next, .icon-prev
+    @include font("Lato", 10em, $white, 900)
+    height: 200%
+    
+.spotlight-subtitle
+    @include font("Lato", 2.289em, $white, 700) //32.05pt/14pt=2.289
+.learn-more
+    @include font("Lato", 1.142em, $black, 700)
+    background-color: $orange
+    padding: 15px 56px
+    &:hover
+        background-color: $green
+        color: $black
+
+/*--Quick Links--*/
+.quick-link a
+    @include font("Lato", 2.398em, $white, 900) //33.57pt/14pt=2.398
+.quick-link-description
+    @include font("Lato", 1rem, $black, 400)
+
+/*--Latest News--*/
+.most-recent-date .month-day
+    @include font("Lato", 1.857em, $blue, 400) //26pt/14pt=1.857
+.most-recent-date .year
+    @include font("Lato", 1.857em, $gray, 400)
+.most-recent-title
+    @include font("Lato", 1.571em, $black, 700) //22pt/14pt=1.571  
+.story-month
+    @include font("Lato", 1em, $white, 400)
+.story-day
+    @include font("Lato", 1.905em, $green, 700) //26.67pt.14pt=1.905
+.story-title
+    @include font("Lato", 1.286em, $green, 700) //18pt/14pt=1.286
+.see-more
+    @include font("Lato", 0.871em, $black, 700) //12.19pt/14pt=0.871
+    background-color: $orange
+    &:hover
+        background-color: $green
+
+input[placeholder]
+    @include font("Lato", 1.142em, #b6b5b5, 400)
+    padding-left: 15px
+    
+        
+/*--Footer--*/
+footer p
+    color: $white
+#footer-company-name
+    color: $orange
+footer a
+    @include font("Lato", 1em, $green, 400)

@@ -1,0 +1,52 @@
+/*Dropdown Menu*/
+.nav-wrap
+    z-index: 20
+    max-width: 1180px
+    margin: 0 auto
+    height: 40px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    background-color: $black
+    & > ul
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        position: relative
+        width: 65%
+        & > li
+            flex: 1 1 auto
+            align-self: center
+            padding: 13px 0
+
+        & li
+            text-align: left
+            display: inline-block
+            position: relative
+            &:hover > ul
+                display: block
+                & li:hover
+                    background-color: $blue
+                    & > a
+                        color: $black
+                        font-weight: 700
+                    &a
+                        margin: 13px 25px
+                        
+            & a
+                display: block
+        & ul
+            display: none
+            position: absolute
+            top: 100%
+            left: 0px
+            & li
+                background-color: rgba(40, 42, 34, 0.9)
+                width: 180px
+                height: 45px
+                text-align: left
+                & a
+                    margin: 13px auto 13px 25px
+            & ul
+                top: 0
+                left: 100%
