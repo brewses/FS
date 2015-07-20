@@ -33,7 +33,7 @@ nav ul .dropdown
 .donate 
     @include font("Lato", 1.142em, $black, 700) //16pt/14pt=1.142
     background-color: $orange
-    padding: 12px 34px
+    padding: 12px 28px
     &:hover
         color: $black
 
@@ -83,6 +83,32 @@ nav ul .dropdown
 input[placeholder]
     @include font("Lato", 1.142em, #b6b5b5, 400)
     padding-left: 15px
+    
+/*--Aside--*/
+aside 
+    text-align: right
+    line-height: 2.5
+    margin-top: -0.75em
+    & ul .side-nav a
+        @include font("Lato", 1.286em, $blue, 700)
+    & ul .side-nav ul li a
+        @include font("Lato", 1.286em, gray, 400)
+            
+/*--Internal Main--*/
+.main-content 
+    & figcaption
+        @include font("Lato", 1em, gray, 400)
+        font-style: italic
+        line-height: 1.5
+    & h4
+        @include font("Lato", 1.714em, $blue, 900) //24pt/14pt=1.714
+        margin-bottom: 30px
+    & h3
+        @include font("Lato", 1.571em, $black, 700)
+        margin: 30px auto
+    & form
+        @include font("Lato", 1em, gray, 400)
+    
     
         
 /*--Footer--*/
