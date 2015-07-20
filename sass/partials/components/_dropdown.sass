@@ -15,6 +15,8 @@
         position: relative
         width: 65%
         z-index: 20
+        & .dropdown
+            margin: 0 20px 0 0
         & > li
             flex: 1 1 auto
             align-self: center
@@ -24,25 +26,32 @@
             text-align: left
             display: inline-block
             position: relative
-            &:hover > ul
-                display: block
-                & li:hover
-                    background-color: $blue
-                    & > a
-                        color: $black
-                        font-weight: 700
-                    &a
-                        margin: 13px 25px
-                        
+            &:hover
+                background: url("../../images/active-menu2.png") bottom left no-repeat
+                & > ul
+                    display: block
+                    & > .sub-nav:hover
+                        background: url("../../images/active-menu.png") center right no-repeat
+                        background-color: $blue
+                    & li:hover
+                        background-color: $blue
+                        & > a
+                            color: $black
+                            font-weight: 700
+                        &a
+                            margin: 13px 25px
+
             & a
                 display: block
         & ul
             display: none
             position: absolute
             top: 100%
-            left: 0px
+            left: -10%
             & li
                 background-color: rgba(40, 42, 34, 0.9)
+                border-top: 0.5px solid rgba(255, 255, 255, 0.2)
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2)
                 width: 180px
                 height: 45px
                 text-align: left

@@ -299,7 +299,7 @@
     <!--/header-->
     
     <div class="grid-container-internal">    
-        <aside class="grid-35 mobile-grid-30">
+        <aside class="grid-35 mobile-grid-40">
              <ul>
                  <li class="side-nav">
                     <a href="#">ABOUT THE ORGANIZATION</a>
@@ -308,8 +308,8 @@
                     <a href="#">MISSION STATEMENT</a>
                 </li>
                  <li class="side-nav">
-                        <a href="#">HISTORY
-                            <ul>
+                        <a href="#" class="expand aside-closed-triangle">HISTORY
+                            <ul class="sub-side-nav">
                                 <li><a href="#">Side-Nav Item</a></li>
                                 <li><a href="#">Side-Nav Item</a></li>
                                 <li><a href="#">Side-Nav Item</a></li>
@@ -317,8 +317,8 @@
                      </a>
                 </li>
                  <li class="side-nav">
-                        <a href="">BOARD OF DIRECTORS
-                            <ul>
+                        <a href="#" class="expand aside-closed-triangle">BOARD OF DIRECTORS
+                            <ul class="sub-side-nav">
                                 <li><a href="#">Side-Nav Item</a></li>
                                 <li><a href="#">Side-Nav Item</a></li>
                                 <li><a href="#">Side-Nav Item</a></li>
@@ -326,8 +326,8 @@
                      </a>
                 </li>
                  <li class="side-nav">
-                        <a href="#">MEMBERSHIP OPTIONS
-                            <ul>
+                        <a href="#" class="expand aside-closed-triangle">MEMBERSHIP OPTIONS
+                            <ul class="sub-side-nav">
                                 <li><a href="#">Yearly</a></li>
                                 <li><a href="#">Monthly</a></li>
                                 <li><a href="#">Legacy</a></li>
@@ -340,7 +340,7 @@
              </ul>
         </aside>
        
-        <div class="main-content grid-65 mobile-grid-70">
+        <div class="main-content grid-65 mobile-grid-60">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam eligendi, quas velit sit, illo magnam ad magni quae nostrum eos odit officiis accusamus atque in quasi repellat eaque, nobis ullam, neque! Earum harum in eum neque temporibus numquam soluta nihil? Quaerat necessitatibus dolores, culpa dolorum at, consequuntur eius nobis recusandae neque debitis sit sapiente consectetur saepe sint enim reiciendis maxime soluta, ab velit officiis impedit molestias dicta asperiores? Nobis eveniet incidunt unde blanditiis nulla provident qui praesentium, totam ducimus, eius quidem illum doloremque quas adipisci esse excepturi, hic aspernatur cumque placeat. Aut architecto ex incidunt excepturi iure, optio nesciunt ducimus mollitia temporibus accusantium nobis, sunt repellendus laborum et quas reiciendis dolorum at cupiditate magni. Quis, facilis! Culpa ratione accusamus laudantium vel sed dolores veniam esse? Dicta dignissimos autem qui, illo doloribus maiores, corporis eum sint labore non, explicabo aperiam enim quia, quasi suscipit placeat quos possimus. Hic sit quam fugit assumenda id quisquam quia animi debitis ab voluptas unde architecto cumque voluptatum aliquid dolorem, sed est, aliquam, non quidem cum.</p>
             <figure class="grid-parent clearfix">
                 <img src="images/bears.jpg" alt="picture of bears" class="grid-80 mobile-grid-100">
@@ -438,14 +438,9 @@
         </footer>
         <!--/.footer-->
     <!--Scripts-->
-    <script src="startbootstrap-full-slider-1.0.3/js//jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="startbootstrap-full-slider-1.0.3/js/bootstrap.min.js"></script>
-    <script>
-        jQuery(document).ready(function ($) {
-            var options = { $AutoPlay: true };
-            var jssor_slider1 = new $JssorSlider$('slider1_container', options);
-        });
-    </script>
+    <script src="js/min/jquery.side-nav-min.js"></script>
 </body>
 <!--/body-->
 </html>

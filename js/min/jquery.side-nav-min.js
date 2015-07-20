@@ -1,0 +1,1 @@
+$(function(){$(".expand").on("click",function(){return $(this).next().slideToggle(200),$(this).toggleClass("aside-closed-triangle aside-open-triangle"),!1})});
